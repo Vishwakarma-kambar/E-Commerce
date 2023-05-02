@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --green:#27ae60;
+    --darkBule:#192a56;
+    --light:#666;
+    --shdow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+/*----------------------------index--------------------------*/
+.main{
+    background-color: #9D8375;
+}
+
+.container{
+    /* margin-top: .2rem; */
+    padding: 0 .6rem .6rem .6rem;
+    /* position: relative; */
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:center;
+   align-items: center;
+   gap: 2rem;
+   /* background-color: #9D8375; */
+   /* z-index: -1; */
+}
+
+.box{
+    padding: 10px;
+    height: 330px; 
+     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #EBECEF;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+/* .box::selection{
+    transform:  ;
+} */
+
+.box img{
+    width: 180px;
+    height: 150px;
+}
+
+.box span{
+    font-weight: bolder;
+}
+
+.box button{
+    padding: 7px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color:var(--darkBule);
+    color: white;
+}
+
+.box button:hover{
+    background-color: var(--green);
+    color: white;
+    font-size: 14px;
+    /* font-weight: bolder; */
+}
+    /*-----------------------------cart-----------------------*/
+.cart-container{
+    /* margin-top: .2rem; */
+    padding: 0 .6rem .6rem .6rem;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.cart-box{
+    padding: 10px;
+    height: 330px; 
+     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.cart-box img{
+    width: 180px;
+    height: 150px;
+}
+
+/* .cart-box img:hover{
+    transform: rotate(180deg);
+} */
+             /*------------------  navbar   -------------*/
+
+ .nav-main{
+  margin-bottom: 30px;
+  /* position: relative; */
+  padding:  0 0 0 8px;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  height: 40px;
+  background-color: #EBECEF;
+  /* box-shadow: #192a56; */
+  border: 2px solid var(--light);
+  z-index: 2;
+ }   
+ 
+ .nav-container{
+    display: flex;
+    gap: 1120px;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ .nav-user {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .cart-link{
+    display: flex;
+    align-items: center;
+  text-decoration: none; 
+  color: blue;
+}
+
+.nav-user .userName{
+    color: red;
+}
+
+/*---------------------------singup------------*/
+
+.sign-main .sign-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-container .sign-inputs{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.sign-inputs input{
+    height: 30px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.sign-inputs input:hover{
+    border: 2px solid rgb(51, 101, 238);
+}
+.sign-inputs input:focus{
+    border: 2px solid rgb(51, 101, 238);
+}
+
+.sign-inputs button{
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 10px;
+}
+.sign-inputs button:hover{
+    border: 2px solid rgb(51, 101, 238);
+}
+.sign-inputs button:focus{
+    border: 2px solid rgb(51, 101, 238);
+}
+
+/*----------------------signIn-----------------------------*/
+.login-containr{
+    margin-top:10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-containr .login-details{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ border: 2px solid black;
+ border-radius: 20px;
+ height: 250px;
+ width: 450px;
+
+}
+
+.login-details input{
+    height: 30px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.login-details button{
+    border: 2px solid black;
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.login-details button:hover{
+    border: 2px solid rgb(51, 101, 238);
+    font-weight: bolder;
+}
+
+.login-details input:hover{
+    border: 2px solid rgb(51, 101, 238);
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Adds a 3D perspective to the card */
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the backface of the card */
+    transition: transform 0.5s ease-in-out; /* Adds a transition effect when flipping the card */
+  }
+  
+  .card-back {
+    transform: rotateY(180deg); /* Flips the back of the card */
+  }
+  
+  .flipped .card-front {
+    transform: rotateY(180deg); /* Flips the front of the card */
+  }
+  
+  .flipped .card-back {
+    transform: rotateY(0deg); /* Flips the back of the card */
+  }
+
+
+ 
